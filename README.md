@@ -115,6 +115,7 @@ Define task
 | options.cacheFile | string | Filename to store cache |
 | options | Object |  Optional settings |
 | options.debug | boolean |  Source map enabled or not |
+| options.watchDelay | number |  Delay after watch |
 
 
 
