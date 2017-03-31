@@ -111,7 +111,7 @@ Define task
 | srcDir | string |  Source directory name |
 | destDir | string |  Destination directory name |
 | options | Object |  Optional settings |
-| options.pattern | string&amp;#124;string[] |  File name pattern |
+| options.pattern | string&#124;string[] |  File name pattern |
 | options.cacheFile | string | Filename to store cache |
 | options | Object |  Optional settings |
 | options.debug | boolean |  Source map enabled or not |
