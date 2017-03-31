@@ -29,7 +29,8 @@
     "browserify": "^14.1.0",
     "browserify-incremental": "^3.1.1",
     "co": "^4.6.0",
-    "pon-task-compile": "^1.0.3"
+    "pon-task-compile": "^1.0.3",
+    "pon-task-watch": "^1.0.1"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
@@ -41,11 +42,13 @@
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^5.0.20",
     "ape-updating": "^4.1.0",
+    "asleep": "^1.0.3",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
     "pon-context": "^1.1.2",
     "pon-doc": "^1.0.1",
-    "sugos-travis": "^2.0.7"
+    "sugos-travis": "^2.0.7",
+    "writeout": "^2.1.0"
   },
   "engines": {
     "node": ">=6",
