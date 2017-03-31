@@ -1,0 +1,17 @@
+/**
+ * {{pkg.description}}
+ * @module {{pkg.name}}
+ * @version {{pkg.version}}
+ */
+
+'use strict'
+
+const define = require('./define')
+
+let lib = define.bind(this)
+
+Object.assign(lib, define, {
+  define
+})
+
+module.exports = lib
