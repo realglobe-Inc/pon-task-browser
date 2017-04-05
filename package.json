@@ -23,14 +23,12 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-browser#readme",
   "dependencies": {
-    "aglob": "^2.0.1",
     "amkdirp": "^1.0.0",
     "asenv": "^1.1.0",
     "browserify": "^14.1.0",
     "browserify-incremental": "^3.1.1",
     "co": "^4.6.0",
-    "pon-task-compile": "^1.0.3",
-    "pon-task-watch": "^1.0.1"
+    "pon-task-compile": "^1.0.3"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
