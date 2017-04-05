@@ -76,11 +76,13 @@ Usage
 
 const pon = require('pon')
 const browser = require('pon-task-browser')
+const { cssModule } = browser.plugins
 
 async function tryExample () {
   let run = pon({
     'ui:bundle': browser('ui/entrypoints', 'public/js', {
-      pattern: '*.js'
+      pattern: '*.js',
+      plugins: [ cssModule('ui/stylesheets', 'public/css/bundle.css') ]
     })
   })
 
@@ -116,6 +118,15 @@ Define task
 | options | Object |  Optional settings |
 | options.debug | boolean |  Source map enabled or not |
 | options.watchDelay | number |  Delay after watch |
+| options.plugins | Array |  Browserify plugins |
+
+
+### ``
+
+
+
+| Param | type | Description |
+| ---- | --- | ----------- |
 
 
 
