@@ -28,7 +28,10 @@ describe('define', function () {
       `${__dirname}/../misc/mocks`,
       `${__dirname}/../tmp/testing-compiled`,
       {
-        pattern: '*-entrypoint.js'
+        pattern: '*-entrypoint.js',
+        plugins: [
+          [ require('css-modulesify'), { rootDir: `${__dirname}/../misc/mocks/css`, output: './tmp/m-style.css' } ]
+        ]
       }
     )
     ok(task)
