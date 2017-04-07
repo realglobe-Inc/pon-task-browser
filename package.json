@@ -28,6 +28,7 @@
     "browserify": "^14.1.0",
     "browserify-incremental": "^3.1.1",
     "co": "^4.6.0",
+    "css-modulesify": "^0.27.2",
     "pon-task-compile": "^1.0.3"
   },
   "devDependencies": {
