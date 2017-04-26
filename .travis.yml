@@ -2,13 +2,9 @@ language: node_js
 node_js:
 - '6'
 before_install:
-# TODO OSS
-# - npm i npm-cli-login -g
-# - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
-# - npm who
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > $HOME/.npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> $HOME/.npmrc
-- cat $HOME/.npmrc
+ - npm i npm-cli-login -g
+ - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
+ - npm who
 install:
 - npm install jsdoc -g
 - npm install
@@ -19,4 +15,4 @@ script:
 after_success:
 - ./ci/travis/publish.js
 env:
-  secure: "hZc+XRuq8oF5kLRF1i3Tu3zCW6kM2wOqIhrhL5UPWvOFglegi6HipqbuRUYKvrv+cNwF/wBLE/y8rvBQruWP12KOe7NFRrsff3i/sJPbTCjIjhmOyrX3m1IxicwlYBTE39nnijWeunw39Ld1YkW+uldZLSyu9Eked4JSWF3sZDPE/Z+eOkKPrF6xWTVJfLUS9gBE06+nOnISA2wgDRY7sxWilhKLOFOFC+gdcTrW2d7aFlreNzAKfXZvoAQK0fpVkgZ4yz1jJiyLpcullOIpeeERkGattLo0UNHrqBrvNOT/0r66pk9kMeu8dgqtBrG/hTJs0y1RCuO2TG0Aint93PXiZ8o2/x05tmtXU2IJoJoMYtSYUxbcM1esopNzeCzPFGSh+GCNMvc8qhVAniTlQNiv1N8+/NOrW56qTYAz1h0Z0sLhs1Al/Nl3wXHYBdoJ5mhgzvKmFAqco05XoCcp7TNrvst1j+2gR0FZEpDPv8ztq1JHkQcdC+1Pr8NLzQIWtjZA8i6ggnnTBldaXcS2UKxbD6KLc/WfabhgzJ5ekXIiVgjH8wm83jGdd8eqZFbd4V3mAqH5dk+sBMSu0iyLrAT60sha25aLb4rY7YxFTlDPkGjBX5baO/+oktlVteR3vILsWBrqCFRcKx4PgLU8Mz8jPWZJ08SvPJFt7DLGzk4="
+  secure: "WTboLu0+qOFuqT538pnn7tvwMu258hBvkHi5pyghVO1MC5s4eb6C7qLTEyRvcu0ExYJ7ijK7Cy4Dd4UwPSXyhY2egh+2kyL+BrKd0C/LngweBhqiG6Fb7/fdhbskLsxJFlnLtWezaGJWP4uQTk/QmfaO8udKFMaxe3girXR0hHwpaoWj32dxKZ7nCaSIT4+Oa7whR28ZES3WKgsLV8DS1UCCIUxZ1+K1tOhay+aLQzSMlgKocyEfOKECQfs+9QakBxn95oRSC7+miN6WtwV5QtDA1XtgdtG2NUSFAwPQpRyteuYfQiVio0rZlATG0j3xguu67MG3OUQ0pWPUMf0fPq5c7quxuGO8Le272XWmOxyRwKHi90ZsalHcg6WKIFpwdoWNRoDqYDhgs7K1SGVv4whbcxmW7BWFp1wWiW+Dji68TjEAFrY3RlqdGDNbUoUgyhB3BBVFzHAyfLvskEc03G+mqJC05gjn1vStVK2JwhyPat085tS5i+pykxunNp26AYywiaiKgubCF6J56/4ia7GcaQvHMNxMIZ/N11GbSB/np3PzgzxbMYHRIvNo+vjnZ1r1XNvEuckhTu7M6HJQ0p4fM74Sxl8cj11KPAmGcoQrMbTlqo3u+++cUioENwuKiXlsf7zgyFImYQrub7tsJJX2xMPsnxfikw7Ya7ucWr8="
