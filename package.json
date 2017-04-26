@@ -29,7 +29,7 @@
     "browserify-incremental": "^3.1.1",
     "co": "^4.6.0",
     "css-modulesify": "^0.27.2",
-    "pon-task-compile": "^1.0.3"
+    "pon-task-compile": "^2.0.1"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
@@ -44,16 +44,13 @@
     "asleep": "^1.0.3",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
-    "pon-context": "^1.1.2",
-    "pon-doc": "^1.0.1",
+    "pon-context": "^2.0.1",
+    "pon-doc": "^2.0.1",
     "sugos-travis": "^2.0.7",
     "writeout": "^2.1.0"
   },
   "engines": {
     "node": ">=6",
     "npm": ">=4"
-  },
-  "publishConfig": {
-    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
   }
 }
