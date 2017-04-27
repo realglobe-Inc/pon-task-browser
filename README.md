@@ -121,14 +121,6 @@ Define task
 | options.plugins | Array |  Browserify plugins |
 
 
-### ``
-
-
-
-| Param | type | Description |
-| ---- | --- | ----------- |
-
-
 
 <!-- Section from "doc/guides/03.Signature.md.hbs" End -->
 

@@ -27,6 +27,7 @@ module.exports = readmeMdBud({
         let comments = functionComments(filename)
         return comments && comments[ 0 ]
       })
+      .filter(Boolean)
   }
 })
 
