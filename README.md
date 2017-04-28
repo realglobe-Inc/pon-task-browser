@@ -118,6 +118,7 @@ Define task
 | options | Object |  Optional settings |
 | options.debug | boolean |  Source map enabled or not |
 | options.watchDelay | number |  Delay after watch |
+| options.watchTargets | string[] |  Additional watch target filenames |
 | options.plugins | Array |  Browserify plugins |
 
 
