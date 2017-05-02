@@ -80,8 +80,7 @@ const { cssModule } = browser.plugins
 
 async function tryExample () {
   let run = pon({
-    'ui:bundle': browser('ui/entrypoints', 'public/js', {
-      pattern: '*.js',
+    'ui:bundle': browser('ui/entrypoints.js', 'public/bundle.js', {
       plugins: [ cssModule('ui/stylesheets', 'public/css/bundle.css') ]
     })
   })
@@ -104,16 +103,15 @@ Signatures
 ---------
 
 
-### `define(srcDir, destDir, options, options) -> function`
+### `define(src, dest, options, options) -> function`
 
 Define task
 
 | Param | type | Description |
 | ---- | --- | ----------- |
-| srcDir | string |  Source directory name |
-| destDir | string |  Destination directory name |
+| src | string |  Source file name |
+| dest | string |  Destination file name |
 | options | Object |  Optional settings |
-| options.pattern | string&#124;string[] |  File name pattern |
 | options.cacheFile | string | Filename to store cache |
 | options | Object |  Optional settings |
 | options.debug | boolean |  Source map enabled or not |

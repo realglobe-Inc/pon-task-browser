@@ -6,8 +6,7 @@ const { cssModule } = browser.plugins
 
 async function tryExample () {
   let run = pon({
-    'ui:bundle': browser('ui/entrypoints', 'public/js', {
-      pattern: '*.js',
+    'ui:bundle': browser('ui/entrypoints.js', 'public/bundle.js', {
       plugins: [ cssModule('ui/stylesheets', 'public/css/bundle.css') ]
     })
   })

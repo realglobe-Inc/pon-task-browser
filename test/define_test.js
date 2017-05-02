@@ -25,10 +25,9 @@ describe('define', function () {
   it('Define', () => co(function * () {
     let ctx = ponContext()
     let task = define(
-      `${__dirname}/../misc/mocks`,
-      `${__dirname}/../tmp/testing-compiled`,
+      `${__dirname}/../misc/mocks/mock-entrypoint.js`,
+      `${__dirname}/../tmp/testing-bundle.js`,
       {
-        pattern: '*-entrypoint.js',
         plugins: [
           [ require('css-modulesify'), { rootDir: `${__dirname}/../misc/mocks/css`, output: './tmp/m-style.css' } ]
         ]
@@ -41,12 +40,11 @@ describe('define', function () {
 
   it('Watch', () => co(function * () {
     let ctx = ponContext({})
-    let srcDir = `${__dirname}/../tmp/testing-watching/src`
-    let destDir = `${__dirname}/../tmp/testing-watching/dest`
-    let src = srcDir + '/foo.js'
+    let src = `${__dirname}/../tmp/testing-watching/src/foo.js`
+    let dest = `${__dirname}/../tmp/testing-watching/dest/foo.js`
     yield writeout(src, 'module.exports = "hoge"', { mkdirp: true })
     yield asleep(100)
-    define(srcDir, destDir, { watchDelay: 1 }).watch(ctx)
+    define(src, dest, { watchDelay: 1 }).watch(ctx)
     yield writeout(src, 'module.exports = "fuge"', { mkdirp: true })
     yield asleep(200)
     yield writeout(src, 'module.exports = "moge"', { mkdirp: true })
