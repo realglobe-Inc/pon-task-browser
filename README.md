@@ -117,6 +117,7 @@ Define task
 | options.debug | boolean |  Source map enabled or not |
 | options.watchDelay | number |  Delay after watch |
 | options.watchTargets | string[] |  Additional watch target filenames |
+| options.fullPaths | boolean |  Use full paths |
 | options.plugins | Array |  Browserify plugins |
 
 
