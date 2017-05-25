@@ -10,6 +10,7 @@ const { ok } = require('assert')
 const asleep = require('asleep')
 const writeout = require('writeout')
 const co = require('co')
+const transforms = require('../lib/transforms')
 
 describe('define', function () {
   this.timeout(3000)
@@ -30,6 +31,9 @@ describe('define', function () {
       {
         plugins: [
           [ require('css-modulesify'), { rootDir: `${__dirname}/../misc/mocks/css`, output: './tmp/m-style.css' } ]
+        ],
+        transforms: [
+          transforms.envify({ NODE_ENV: 'hoge' })
         ]
       }
     )

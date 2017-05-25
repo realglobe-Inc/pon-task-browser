@@ -1,6 +1,6 @@
 {
   "name": "pon-task-browser",
-  "version": "2.0.8",
+  "version": "2.1.0",
   "description": "Pon task to bundle browser script",
   "main": "lib",
   "browser": "shim/browser",
@@ -30,6 +30,7 @@
     "browserify-incremental": "^3.1.1",
     "co": "^4.6.0",
     "css-modulesify": "^0.27.2",
+    "envify": "^4.0.0",
     "pon-task-compile": "^2.1.4"
   },
   "devDependencies": {
