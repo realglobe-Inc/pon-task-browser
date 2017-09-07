@@ -6,22 +6,22 @@
 
 const transforms = require('../lib/transforms.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('transforms', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Transforms', () => co(function * () {
+  it('Transforms', async () => {
 
-  }))
+  })
 })
 
 /* global describe, before, after, it */
