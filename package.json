@@ -31,7 +31,7 @@
     "css-modulesify": "^0.28.0",
     "envify": "^4.1.0",
     "pon-cache": "^1.0.1",
-    "pon-task-compile": "^2.1.5"
+    "pon-task-compile": "^3.0.1"
   },
   "devDependencies": {
     "ababel": "^2.0.2",
