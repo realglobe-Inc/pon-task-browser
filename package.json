@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-browser#readme",
   "dependencies": {
-    "amkdirp": "^1.0.0",
-    "asenv": "^1.1.1",
-    "asfs": "^1.2.3",
-    "browserify": "^14.4.0",
+    "amkdirp": "^2.0.0",
+    "asenv": "^2.0.0",
+    "asfs": "^2.0.1",
+    "browserify": "^14.5.0",
     "browserify-incremental": "^3.1.1",
     "css-modulesify": "^0.28.0",
     "envify": "^4.1.0",
@@ -36,12 +36,12 @@
   "devDependencies": {
     "ababel": "^2.0.2",
     "ababel-es2015": "^2.0.2",
-    "amocha": "^2.0.0",
+    "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^6.0.0",
+    "ape-tmpl": "^6.0.2",
     "ape-updating": "^4.1.1",
     "asleep": "^1.0.3",
     "coz": "^6.0.20",
@@ -49,7 +49,7 @@
     "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
     "sugos-travis": "^2.0.7",
-    "writeout": "^2.1.0"
+    "writeout": "^2.2.1"
   },
   "engines": {
     "node": ">=7.6",
