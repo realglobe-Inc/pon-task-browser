@@ -37,7 +37,7 @@ describe('define', function () {
           transforms.envify({NODE_ENV: 'development'})
         ],
         ignores: [
-          require.resolve('../misc/mocks/mock-to-ignore.js')
+          './mock-to-ignore.js'
         ],
         fullPaths: false
       }
