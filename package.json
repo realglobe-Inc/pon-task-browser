@@ -31,10 +31,10 @@
     "css-modulesify": "^0.28.0",
     "envify": "^4.1.0",
     "pon-cache": "^1.0.1",
-    "pon-task-compile": "^3.0.1"
+    "pon-task-compile": "^3.0.3"
   },
   "devDependencies": {
-    "ababel": "^2.0.2",
+    "ababel": "^2.0.3",
     "ababel-es2015": "^2.0.2",
     "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
