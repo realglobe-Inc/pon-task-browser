@@ -30,9 +30,7 @@ describe('define', function () {
       `${__dirname}/../misc/mocks/mock-entrypoint.js`,
       `${__dirname}/../tmp/testing-bundle.js`,
       {
-        plugins: [
-          [require('css-modulesify'), {rootDir: `${__dirname}/../misc/mocks/css`, output: './tmp/m-style.css'}]
-        ],
+        plugins: [],
         transforms: [
           transforms.envify({NODE_ENV: 'development'})
         ],
