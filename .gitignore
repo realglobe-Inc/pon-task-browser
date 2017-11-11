@@ -33,3 +33,5 @@ tmp
 .npmrc
 
 shim/browser
+
+.DS_Store
