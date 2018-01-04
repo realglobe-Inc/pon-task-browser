@@ -1,6 +1,6 @@
 {
   "name": "pon-task-browser",
-  "version": "4.0.2",
+  "version": "4.1.0",
   "description": "Pon task to bundle browser script",
   "main": "lib",
   "browser": "shim/browser",
