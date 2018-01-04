@@ -30,7 +30,8 @@
     "browserify-incremental": "^3.1.1",
     "envify": "^4.1.0",
     "pon-cache": "^1.0.1",
-    "pon-task-compile": "^3.0.3"
+    "pon-task-compile": "^3.0.3",
+    "rollupify": "^0.4.0"
   },
   "devDependencies": {
     "ababel": "^2.0.3",
