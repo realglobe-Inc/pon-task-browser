@@ -54,7 +54,8 @@ describe('define', function () {
       {
         plugins: [],
         transforms: [
-          transforms.rollupify()
+          transforms.rollupify(),
+          transforms.babelify()
         ],
         ignores: [
           './mock-to-ignore.js'
