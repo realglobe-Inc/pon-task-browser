@@ -29,7 +29,7 @@
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
-    "browserify": "^15.0.0",
+    "browserify": "^15.2.0",
     "browserify-incremental": "^3.1.1",
     "envify": "^4.1.0",
     "pon-cache": "^1.0.1",
@@ -37,7 +37,7 @@
     "rollupify": "^0.4.0"
   },
   "devDependencies": {
-    "ababel": "^2.0.3",
+    "ababel": "^3.0.2",
     "ababel-es2015": "^2.0.2",
     "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
