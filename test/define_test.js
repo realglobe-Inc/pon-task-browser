@@ -67,6 +67,8 @@ describe('define', function () {
     ok(task)
 
     await Promise.resolve(task(ctx))
+
+    await task.deps(ctx)
   })
 
   it('Rollup', async () => {
