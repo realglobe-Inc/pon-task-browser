@@ -46,6 +46,29 @@ describe('define', function () {
     await task.deps(ctx)
   })
 
+  it('Define all', async () => {
+    await filedel(`${__dirname}/../tmp/*.json`) // Clear cache
+    const ctx = ponContext()
+    const task = define.all(
+      `${__dirname}/../misc/mocks`,
+      `${__dirname}/../tmp/all`,
+      {
+        pattern: 'mock-entrypoint.js',
+        plugins: [],
+        transforms: [
+          transforms.envify({NODE_ENV: 'development'})
+        ],
+        ignores: [
+          './mock-to-ignore.js'
+        ],
+        fullPaths: false
+      }
+    )
+    ok(task)
+
+    await Promise.resolve(task(ctx))
+  })
+
   it('Rollup', async () => {
     await filedel(`${__dirname}/../tmp/*.json`) // Clear cache
     const ctx = ponContext()

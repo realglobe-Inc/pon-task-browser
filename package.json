@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-browser#readme",
   "dependencies": {
+    "aglob": "^3.0.0",
     "amkdirp": "^2.0.0",
     "asenv": "^2.0.2",
     "asfs": "^2.0.2",
