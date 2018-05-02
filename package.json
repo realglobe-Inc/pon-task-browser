@@ -1,6 +1,6 @@
 {
   "name": "pon-task-browser",
-  "version": "4.1.12",
+  "version": "4.1.13",
   "description": "Pon task to bundle browser script",
   "main": "lib",
   "browser": "shim/browser",
@@ -53,7 +53,7 @@
     "writeout": "^2.2.1"
   },
   "engines": {
-    "node": ">=7.6",
-    "npm": ">=4"
+    "node": ">=8",
+    "npm": ">=5"
   }
 }
