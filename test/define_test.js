@@ -71,30 +71,6 @@ describe('define', function () {
     await task.deps(ctx)
   })
 
-  it('Rollup', async () => {
-    await filedel(`${__dirname}/../tmp/*.json`) // Clear cache
-    const ctx = ponContext()
-    const task = define(
-      `${__dirname}/../misc/mocks/mock-rollup-index.js`,
-      `${__dirname}/../tmp/testing-rollup-bundle.js`,
-      {
-        plugins: [],
-        transforms: [
-          transforms.rollupify(),
-        ],
-        ignores: [
-          './mock-to-ignore.js'
-        ],
-        fullPaths: false
-      }
-    )
-    ok(task)
-
-    await Promise.resolve(task(ctx))
-
-    await task.deps(ctx)
-  })
-
   it('Watch', async () => {
     let ctx = ponContext({})
     let src = `${__dirname}/../tmp/testing-watching/src/foo.js`
