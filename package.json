@@ -1,6 +1,6 @@
 {
   "name": "pon-task-browser",
-  "version": "4.2.0",
+  "version": "5.0.0",
   "description": "Pon task to bundle browser script",
   "main": "lib",
   "browser": "shim/browser",
@@ -29,9 +29,11 @@
     "asfs": "^2.0.3",
     "browserify": "^16.2.2",
     "browserify-incremental": "^3.1.1",
+    "hard-source-webpack-plugin": "^0.8.1",
     "loose-envify": "^1.3.1",
     "pon-cache": "^1.0.1",
-    "pon-task-compile": "^3.0.4"
+    "pon-task-compile": "^3.0.4",
+    "webpack": "^4.12.0"
   },
   "devDependencies": {
     "ababel": "^4.0.9",

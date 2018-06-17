@@ -7,13 +7,11 @@
 'use strict'
 
 const define = require('./define')
-const transforms = require('./transforms')
 
 const lib = define.bind(this)
 
 Object.assign(lib, define, {
   define,
-  transforms
 })
 
 module.exports = lib
