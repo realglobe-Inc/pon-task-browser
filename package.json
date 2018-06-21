@@ -3,9 +3,8 @@
   "version": "5.0.0",
   "description": "Pon task to bundle browser script",
   "main": "lib",
-  "browser": "shim/browser",
   "scripts": {
-    "prepare": "node ./ci/build.js && node ./ci/shim.js ",
+    "prepare": "node ./ci/build.js",
     "test": "node ./ci/test.js"
   },
   "repository": "realglobe-Inc/pon-task-browser",
@@ -27,15 +26,11 @@
     "amkdirp": "^2.0.0",
     "asenv": "^2.0.2",
     "asfs": "^2.0.3",
-    "browserify": "^16.2.2",
-    "browserify-incremental": "^3.1.1",
     "hard-source-webpack-plugin": "^0.8.1",
-    "loose-envify": "^1.3.1",
     "pon-cache": "^1.0.1",
     "webpack": "^4.12.0"
   },
   "devDependencies": {
-    "ababel": "^4.0.9",
     "amocha": "^5.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
