@@ -1,5 +1,6 @@
 'use strict'
 
+const {unlessProduction, isDevelopment} = require('the-check')
 console.log('!!!hoge')
 
 function hoge () {
@@ -13,3 +14,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 console.log('!!is hoge ', hoge)
+
+unlessProduction(() => {
+  console.log('yes, not in production')
+})
