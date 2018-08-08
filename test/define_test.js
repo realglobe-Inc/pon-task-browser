@@ -41,9 +41,11 @@ describe('define', function () {
       {
         e3: `${__dirname}/../misc/mocks/mock-entrypoint3.js`,
         e2: `${__dirname}/../misc/mocks/mock-entrypoint2.js`,
-        split: true,
       },
       `${__dirname}/../tmp/bundles/[name]-bundle.js`,
+      {
+        split: true,
+      }
     )
     ok(task)
     await Promise.resolve(task(ctx))
