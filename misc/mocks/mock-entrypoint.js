@@ -1,8 +1,6 @@
 'use strict'
 
 const {foo} = require('./mock-dep')
+const asenv = require('asenv')
 
-console.log(foo())
-
-require('./mock-to-ignore')
-require('./mock-env-index')
+console.log(foo(), asenv.getEnv())

@@ -28,10 +28,24 @@ describe('define', function () {
     const ctx = ponContext()
     const task = define(
       `${__dirname}/../misc/mocks/mock-entrypoint.js`,
-      `${__dirname}/../tmp/testing-bundle.js`,
+      `${__dirname}/../tmp/bundle.js`,
     )
     ok(task)
 
+    await Promise.resolve(task(ctx))
+  })
+
+  it('Code splitting', async () => {
+    const ctx = ponContext()
+    const task = define(
+      {
+        e3: `${__dirname}/../misc/mocks/mock-entrypoint3.js`,
+        e2: `${__dirname}/../misc/mocks/mock-entrypoint2.js`,
+        split: true,
+      },
+      `${__dirname}/../tmp/bundles/[name]-bundle.js`,
+    )
+    ok(task)
     await Promise.resolve(task(ctx))
   })
 
