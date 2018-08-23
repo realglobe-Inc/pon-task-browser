@@ -111,13 +111,11 @@ Define task
 | src | string |  Source file name |
 | dest | string |  Destination file name |
 | options | Object |  Optional settings |
-| options.cacheFile | string | Filename to store cache |
+| options.cacheDir | string | Cache directory path |
 | options | Object |  Optional settings |
-| options.debug | boolean |  Source map enabled or not |
+| options.mode | boolean |  Webpack mode |
 | options.watchDelay | number |  Delay after watch |
-| options.watchTargets | string[] |  Additional watch target filenames |
-| options.fullPaths | boolean |  Use full paths |
-| options.plugins | Array |  Browserify plugins |
+| options.watchIgnore | string[] |  Pattens to ignore for watch |
 
 
 
