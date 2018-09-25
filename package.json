@@ -1,6 +1,6 @@
 {
   "name": "pon-task-browser",
-  "version": "6.1.1",
+  "version": "6.1.2",
   "description": "Pon task to bundle browser script",
   "main": "lib",
   "scripts": {
@@ -28,7 +28,7 @@
     "hard-source-webpack-plugin": "^0.12.0",
     "pon-cache": "^1.0.1",
     "source-map-loader": "^0.2.4",
-    "webpack": "^4.19.1"
+    "webpack": "4.18.1"
   },
   "devDependencies": {
     "@babel/runtime": "^7.0.0",
