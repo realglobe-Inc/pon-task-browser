@@ -28,7 +28,7 @@
     "hard-source-webpack-plugin": "^0.12.0",
     "pon-cache": "^1.0.1",
     "source-map-loader": "^0.2.4",
-    "webpack": "^4.25.1",
+    "webpack": "4.18.1",
     "webpack-bundle-analyzer": "^3.0.3"
   },
   "devDependencies": {
