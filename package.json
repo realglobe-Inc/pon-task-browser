@@ -32,11 +32,11 @@
     "webpack-bundle-analyzer": "^3.0.3"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.0.0",
+    "@babel/runtime": "^7.1.5",
     "amocha": "^5.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
-    "ape-releasing": "^4.0.4",
+    "ape-releasing": "^5.0.0",
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^6.0.11",
     "ape-updating": "^5.0.1",
@@ -47,7 +47,7 @@
     "pon-context": "^3.0.2",
     "pon-doc": "^2.0.1",
     "sugos-travis": "^2.0.7",
-    "the-check": "^2.0.5",
+    "the-check": "^2.0.12",
     "writeout": "^2.2.1"
   },
   "engines": {
