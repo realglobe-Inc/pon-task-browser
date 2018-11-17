@@ -47,7 +47,7 @@
     "pon-context": "^3.0.2",
     "pon-doc": "^2.0.1",
     "sugos-travis": "^2.0.7",
-    "the-check": "^2.0.12",
+    "the-check": "^2.0.16",
     "writeout": "^2.2.1"
   },
   "engines": {
