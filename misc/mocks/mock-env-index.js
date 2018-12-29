@@ -1,7 +1,6 @@
 'use strict'
 
-const {unlessProduction, isDevelopment} = require('the-check')
-console.log('!!!hoge')
+const { unlessProduction, isDevelopment } = require('the-check')
 
 function hoge () {
   return process.env.NODE_ENV
