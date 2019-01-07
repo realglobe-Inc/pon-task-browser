@@ -7,7 +7,7 @@
 const define = require('../lib/define.js')
 const ponContext = require('pon-context')
 const path = require('path')
-const {ok} = require('assert')
+const { ok } = require('assert')
 const asleep = require('asleep')
 const writeout = require('writeout')
 const filedel = require('filedel')
@@ -29,6 +29,20 @@ describe('define', function () {
     const task = define(
       `${__dirname}/../misc/mocks/mock-entrypoint.js`,
       `${__dirname}/../tmp/bundle.js`,
+      { prepack: false },
+    )
+    ok(task)
+
+    await Promise.resolve(task(ctx))
+  })
+
+  it('Define', async () => {
+    await filedel(`${__dirname}/../tmp/*.json`) // Clear cache
+    const ctx = ponContext()
+    const task = define(
+      `${__dirname}/../misc/mocks/mock-entrypoint.js`,
+      `${__dirname}/../tmp/bundle-prepacked.js`,
+      { prepack: true },
     )
     ok(task)
 
@@ -71,12 +85,12 @@ describe('define', function () {
     let ctx = ponContext({})
     let src = `${__dirname}/../tmp/testing-watching/src/foo.js`
     let dest = `${__dirname}/../tmp/testing-watching/dest/foo.js`
-    await writeout(src, 'module.exports = "hoge"', {mkdirp: true})
+    await writeout(src, 'module.exports = "hoge"', { mkdirp: true })
     await asleep(100)
-    const close = define(src, dest, {watchDelay: 1}).watch(ctx)
-    await writeout(src, 'module.exports = "fuge"', {mkdirp: true})
+    const close = define(src, dest, { watchDelay: 1 }).watch(ctx)
+    await writeout(src, 'module.exports = "fuge"', { mkdirp: true })
     await asleep(200)
-    await writeout(src, 'module.exports = "moge"', {mkdirp: true})
+    await writeout(src, 'module.exports = "moge"', { mkdirp: true })
     await asleep(200)
     close()
   })
