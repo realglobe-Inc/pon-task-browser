@@ -6,6 +6,8 @@ before_install:
  - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
  - npm who
 install:
+- rm -rf node_modules
+- rm -rf tmp
 - npm install jsdoc -g
 - npm install
 script:
