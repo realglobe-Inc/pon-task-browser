@@ -36,7 +36,7 @@ describe('define', function () {
     await Promise.resolve(task(ctx))
   })
 
-  it('Define', async () => {
+  it('prepack', async () => {
     await filedel(`${__dirname}/../tmp/*.json`) // Clear cache
     const ctx = ponContext()
     const task = define(

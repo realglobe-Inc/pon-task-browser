@@ -1,6 +1,6 @@
 {
   "name": "pon-task-browser",
-  "version": "7.0.9",
+  "version": "7.1.0",
   "description": "Pon task to bundle browser script",
   "main": "lib",
   "scripts": {
@@ -28,7 +28,6 @@
     "assert": "^1.4.1",
     "buffer": "^5.2.1",
     "events": "^3.0.0",
-    "hard-source-webpack-plugin": "^0.13.1",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.0",
     "pon-cache": "^1.0.1",
