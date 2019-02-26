@@ -20,19 +20,19 @@ describe('name-of-entry', function () {
 
   it('Name of entry', async () => {
     equal(
-      nameOfEntry('x/entrypoint.js', {
-        context: 'client/shim',
-      }),
+      nameOfEntry('x/entrypoint.js', {}),
       'x-entrypoint'
     )
     equal(
       nameOfEntry({
         bundle: 'ui/entrypoint.js',
         bundle2: 'ui/entrypoint2.js',
-      }, {
-        context: 'client/shim'
-      }),
+      }, {}),
       'ui-entrypoint&ui-entrypoint2',
+    )
+    equal(
+      nameOfEntry(__filename),
+      'test-nameOfEntry_test',
     )
   })
 })
