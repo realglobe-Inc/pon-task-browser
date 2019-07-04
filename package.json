@@ -1,6 +1,6 @@
 {
   "name": "pon-task-browser",
-  "version": "7.2.18",
+  "version": "7.2.19",
   "description": "Pon task to bundle browser script",
   "main": "lib",
   "scripts": {
@@ -25,7 +25,6 @@
     "aglob": "^3.0.2",
     "amkdirp": "^2.0.0",
     "asfs": "^2.2.3",
-    "assert": "^2.0.0",
     "buffer": "^5.2.1",
     "events": "^3.0.0",
     "os-browserify": "^0.3.0",
