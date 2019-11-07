@@ -36,7 +36,7 @@
     "webpack-bundle-analyzer": "^3.4.1"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.6.3",
+    "@babel/runtime": "^7.7.2",
     "@the-/check": "^15.5.8",
     "amocha": "^6.0.0",
     "ape-doc": "^2.0.4",
