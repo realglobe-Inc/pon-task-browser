@@ -1,6 +1,6 @@
 {
   "name": "pon-task-browser",
-  "version": "7.3.3",
+  "version": "7.3.4",
   "description": "Pon task to bundle browser script",
   "main": "lib",
   "scripts": {
@@ -36,8 +36,8 @@
     "webpack-bundle-analyzer": "^3.4.1"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.7.2",
-    "@the-/check": "^15.5.8",
+    "@babel/runtime": "^7.7.4",
+    "@the-/check": "^15.6.1",
     "amocha": "^6.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^2.0.2",
