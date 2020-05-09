@@ -83,8 +83,8 @@ describe('define', function () {
 
   it('Watch', async () => {
     let ctx = ponContext({})
-    let src = `${__dirname}/../tmp/testing-watching/src/foo.js`
-    let dest = `${__dirname}/../tmp/testing-watching/dest/foo.js`
+    let src = `${__dirname}/../tmp/testing-src/foo.js`
+    let dest = `${__dirname}/../tmp/testing-dest/foo.js`
     await writeout(src, 'module.exports = "hoge"', { mkdirp: true })
     await asleep(100)
     const close = define(src, dest, { watchDelay: 1 }).watch(ctx)
