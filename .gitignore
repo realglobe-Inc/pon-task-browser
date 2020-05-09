@@ -29,6 +29,7 @@ node_modules
 
 .idea
 tmp
+!tmp/.gitkeep
 
 .npmrc
 
