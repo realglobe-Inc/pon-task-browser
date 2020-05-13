@@ -1,6 +1,6 @@
 {
   "name": "pon-task-browser",
-  "version": "7.6.0",
+  "version": "7.6.1",
   "description": "Pon task to bundle browser script",
   "main": "lib",
   "scripts": {
