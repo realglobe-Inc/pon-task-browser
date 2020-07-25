@@ -1,6 +1,6 @@
 {
   "name": "pon-task-browser",
-  "version": "7.6.2",
+  "version": "7.7.0",
   "description": "Pon task to bundle browser script",
   "main": "lib",
   "scripts": {
@@ -26,21 +26,21 @@
     "amkdirp": "^2.0.0",
     "asfs": "^2.3.0",
     "autodll-webpack-plugin": "^0.4.2",
-    "events": "^3.1.0",
+    "events": "^3.2.0",
     "hard-source-webpack-plugin": "^0.13.1",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
     "pon-cache": "^1.0.2",
     "process": "^0.11.10",
     "querystring-es3": "^0.2.1",
-    "source-map-loader": "^0.2.4",
-    "webpack": "^4.43.0",
-    "webpack-bundle-analyzer": "^3.7.0"
+    "source-map-loader": "^1.0.1",
+    "webpack": "^4.44.0",
+    "webpack-bundle-analyzer": "^3.8.0"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.9.6",
+    "@babel/runtime": "^7.10.5",
     "@the-/check": "^15.6.3",
-    "amocha": "^7.0.2",
+    "amocha": "^7.1.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^2.0.2",
     "ape-releasing": "^5.0.7",
